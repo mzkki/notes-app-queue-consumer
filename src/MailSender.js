@@ -16,9 +16,10 @@ class MailSender {
 
   sendEmail(targetEmail, content) {
     const message = {
-      from: 'Notes App',
+      from: 'admin@binaanugerahsukses.com',
       to: targetEmail,
       subject: 'Ekspor Catatan',
+      html: '<div style="width: 100%; background-color: #EADBC8; padding: 50px"> <span style="color: blue">Haris Muzakki</span> <<a href="mailto:harismzkki@binaanugerahsukses.com" style="color: red"> harismzkki@binaanugerahsukses.com </a>></div>',
       text: 'Terlampir hasil dari ekspor catatan',
       attachments: [
         {
